@@ -2,3 +2,27 @@
   margin: 0;
   padding: 0;
 }
+
+.nav {
+  display: flex;
+  margin: 20px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+}
+
+.nav ul li {
+  margin-right: 10px;
+}
+
+.nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
