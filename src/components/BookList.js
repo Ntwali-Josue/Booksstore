@@ -1,4 +1,3 @@
-import { log } from 'console';
 import React, { useState } from 'react';
 import Book from './Book';
 import InputBook from './InputBook';
@@ -10,6 +9,7 @@ const BookLists = () => {
   });
 
   const onChange = (e) => {
+    console.log(e.target.value);
     setBooks({
       ...books,
       title: e.target.value,
