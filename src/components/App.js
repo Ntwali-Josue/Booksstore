@@ -1,13 +1,14 @@
 import Navbar from './Navbar';
-import Books from './Books';
+import BookList from './BookLists';
+import InputBook from './InputBook';
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <hr />
-      <Books />
+      <BookList />
+      <InputBook />
     </div>
   );
 }

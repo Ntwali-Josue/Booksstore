@@ -31,10 +31,16 @@ ul {
 
 a {
   text-decoration: none;
+  color: #2727f8;
 }
 
-.book-action {
-  display: flex;
+.bookItem {
+  margin-top: 30px;
+}
+
+
+.book-action a {
+  padding-right: 10px;
 }
 
 .book-card {
@@ -43,12 +49,44 @@ a {
   width: 90%;
   grid-template-columns: 35% 30% 35%;
   background-color: #fff;
-
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .progress {
   display: grid;
   width: 200px;
   grid-template-columns: 50% 50%;
-  margin-top: 40px;
+  margin-top: 30px;
+}
+
+button {
+  color: #fff;
+  background-color: #0e54eb;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.form-control {
+  width: 40%;
+  border: 1px solid #f5f5f5;
+}
+
+.select {
+  width: 20%;
+}
+
+.add-book {
+  color: #fff;
+  background-color: #2366f5;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
