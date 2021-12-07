@@ -5,67 +5,15 @@
 
 .nav {
   display: flex;
-  /* margin: 20px; */
   padding: 0 20px;
   background-color: #fff;
 }
 
-.nav ul {
+.nav-links {
   display: flex;
   list-style: none;
-  padding: 10px;
-}
-
-.nav ul li {
-  margin-right: 10px;
-}
-
-.nav ul li a {
-  color: #000;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #2727f8;
-}
-
-.bookItem {
-  margin-top: 30px;
-}
-
-
-.book-action a {
-  padding-right: 10px;
-}
-
-.book-card {
-  display: grid;
-  margin: auto;
-  width: 90%;
-  grid-template-columns: 35% 30% 35%;
-  background-color: #fff;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-
-.progress {
-  display: grid;
-  width: 200px;
-  grid-template-columns: 50% 50%;
-  margin-top: 30px;
-}
-
-button {
-  color: #fff;
-  background-color: #0e54eb;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
+  padding: 25px;
+  color: #6e6e6e;
 }
 
 .form-group {
