@@ -4,6 +4,9 @@
 
 > This project is a webapp which helps the user to view lists of books and add them. It also allows the user to search for books by categories.
 
+![screenshot](https://user-images.githubusercontent.com/58233753/145073843-8d35703c-1cd4-41f9-a022-63e0c883c869.png)
+
+
 ## Built With 
 
 - HTML, JAVASCRIPT, CSS
