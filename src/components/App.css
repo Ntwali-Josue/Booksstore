@@ -5,7 +5,9 @@
 
 .nav {
   display: flex;
-  margin: 20px;
+  /* margin: 20px; */
+  padding: 0 20px;
+  background-color: #fff;
 }
 
 .nav ul {
@@ -23,6 +25,30 @@
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+}
+
+.book-action {
+  display: flex;
+}
+
+.book-card {
+  display: grid;
+  margin: auto;
+  width: 90%;
+  grid-template-columns: 35% 30% 35%;
+  background-color: #fff;
+
+}
+
+.progress {
+  display: grid;
+  width: 200px;
+  grid-template-columns: 50% 50%;
+  margin-top: 40px;
 }
