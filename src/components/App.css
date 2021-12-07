@@ -1,0 +1,40 @@
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 25px;
+  color: #6e6e6e;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.form-control {
+  width: 40%;
+  border: 1px solid #f5f5f5;
+}
+
+.select {
+  width: 20%;
+}
+
+.add-book {
+  color: #fff;
+  background-color: #2366f5;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}

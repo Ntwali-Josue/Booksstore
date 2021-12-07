@@ -1,76 +1,36 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Bookstore
 
-> One paragraph statement about the project.
+> This project is a webapp which helps the user to view lists of books and add them. It also allows the user to search for books by categories.
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
+![screenshot](https://user-images.githubusercontent.com/58233753/145073843-8d35703c-1cd4-41f9-a022-63e0c883c869.png)
 
 
-## Getting Started
+## Built With 
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- HTML, JAVASCRIPT, CSS
+- React & Redux
+- Git
 
+<!-- ## Live Demo  -->
+
+<!-- [Live Demo Link](https://ntwali-josue.github.io/todo-app) -->
+
+## Getting Started 
+<!-- **To get started with the project, you can use the [Live Demo Link]https://ntwali-josue.github.io/todo-app/) to access the website and interact with the features.** -->
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites 📌
+- `Node.js` installed.
+- `Git` installed.
 
-### Setup
+### Setup 🔂 
+- Clone this repository by running `git clone https://github.com/Ntwali-Josue/Booksstore.git` in your terminal.
 
-### Install
+### Install ⚙️
+- Run `npm install` in your terminal to install the dependencies.
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+### Usage 💻
+- Run `npm start` for webpack to run and open your application in the browser.
