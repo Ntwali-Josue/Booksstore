@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
-import InputBook from './InputBook';
-import Book from './Book';
+import BookLists from './BookList';
 import Categories from './Categories';
 import './App.css';
 
@@ -9,10 +8,9 @@ const App = () => (
   <div className="App">
     <Navbar />
     <Routes>
-      <Route path="/books" component={Book} />
-      <Route exact path="/categories" component={Categories} />
+      <Route path="/" element={<BookLists />} />
+      <Route exact path="/categories" element={<Categories />} />
     </Routes>
-    <InputBook />
   </div>
 );
 
