@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
 import Select from 'react-select';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
@@ -21,12 +20,10 @@ const InputBook = () => {
   const handleTitleChange = (e) => {
     e.preventDefault();
     setTitle(e.target.value);
-    // console.log(books);\
   };
 
   const handleAuthorChange = (e) => {
     setAuthor(e.target.value);
-    // console.log(books);\
   };
 
   const handleSubmit = (e) => {
@@ -43,10 +40,6 @@ const InputBook = () => {
     setAuthor('');
   };
 
-  // const {
-  //   title, author, onTitleChange, onAuthorChange, handleSubmit,
-  // } = props;
-
   return (
     <form onSubmit={handleSubmit}>
       <h1 style={{ color: '#5c5c5c', padding: '0 50px' }}>Add a new Book</h1>
@@ -59,13 +52,5 @@ const InputBook = () => {
     </form>
   );
 };
-
-// InputBook.propTypes = {
-//   title: PropTypes.string.isRequired,
-//   author: PropTypes.string.isRequired,
-//   onTitleChange: PropTypes.func.isRequired,
-//   onAuthorChange: PropTypes.func.isRequired,
-//   handleSubmit: PropTypes.func.isRequired,
-// };
 
 export default InputBook;
