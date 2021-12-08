@@ -1,32 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 import InputBook from './InputBook';
 
 const BookLists = () => {
-  const [books, setBooks] = useState({
-    title: '',
-    author: '',
-  });
-
-  const onChange = (e) => {
-    console.log(e.target.value);
-    setBooks({
-      ...books,
-      title: e.target.value,
-    });
-  };
+  const books = useSelector((state) => state.booksReducer);
+  const mapBooks = books.map((book) => (
+    <Book key={book.id} id={book.id} title={book.title} author={book.author} />
+  ));
 
   return (
     <div className="book-lists">
-      <Book title={books.title} author={books.author} />
-      <Book title={books.title} author={books.author} />
-      <Book title={books.title} author={books.author} />
-      <InputBook
-        title={books.title}
-        author={books.author}
-        setBooks={setBooks}
-        onChange={onChange}
-      />
+      {mapBooks}
+      <InputBook />
     </div>
   );
 };
