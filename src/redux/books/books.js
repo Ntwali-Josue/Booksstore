@@ -13,12 +13,13 @@ export const getBooks = () => async (dispatch) => {
 
   const allBooks = Object.entries(books);
   const fetchedBooks = [];
-  allBooks.forEach(([key, value]) => {
-    const id = key;
-    const { title } = value;
+  allBooks.forEach((book) => {
+    const id = book[0];
+    const { title } = book[1][0];
     fetchedBooks.push({ id, title });
   });
-  dispatch({ type: ADD_BOOK, fetchedBooks });
+
+  dispatch({ type: GET_BOOKS, fetchedBooks });
 };
 
 export const addBook = (book) => async (dispatch) => {
