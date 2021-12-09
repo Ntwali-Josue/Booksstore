@@ -11,10 +11,6 @@ const BookLists = () => {
   }, []);
 
   const books = useSelector((state) => state.booksReducer);
-  books.forEach((book) => {
-    console.log(book.id);
-  });
-
   const mapBooks = books.map((book) => (
     <Book key={book.id} id={book.id} title={book.title} category={book.category} />
   ));

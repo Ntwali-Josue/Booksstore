@@ -40,9 +40,14 @@ export const addBook = (book) => async (dispatch) => {
 };
 
 export const removeBook = (bookId) => async (dispatch) => {
-  const result = await axios.delete(`${fetchApi}/${bookId}`);
-  const removedBook = result.data;
-  if (removedBook === 'Deleted') {
+  const result = await axios.delete(`${fetchApi}/${bookId}`, {
+    headers: {
+      'content-type': 'application/json',
+      'Access-Controll-Allow-Origin': '*',
+    },
+  });
+  const removedBook = await result.data;
+  if (removedBook) {
     dispatch({
       type: REMOVE_BOOK,
       bookId,
@@ -55,9 +60,9 @@ const reducer = (state = initialsState, action) => {
     case GET_BOOKS:
       return [...action.fetchedBooks];
     case ADD_BOOK:
-      return [...state, action.payload];
+      return [...state, action.book];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload);
+      return state.filter((book) => book.id !== action.bookId);
     default:
       return state;
   }
