@@ -3,9 +3,9 @@ import axios from 'axios';
 const GET_BOOKS = 'bookStore/books/GET_BOOKS';
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
-const fetchApi = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/GFFEgsISOe46DTFg0eTa/books/';
+const fetchApi = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/GFFEgsISOe46DTFg0eTa/books';
 
-const initialsState = [];
+const initialState = [];
 
 export const getBooks = () => async (dispatch) => {
   const result = await axios.get(fetchApi);
@@ -55,7 +55,7 @@ export const removeBook = (bookId) => async (dispatch) => {
   }
 };
 
-const reducer = (state = initialsState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_BOOKS:
       return [...action.fetchedBooks];
