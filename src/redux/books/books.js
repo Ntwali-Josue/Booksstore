@@ -16,7 +16,8 @@ export const getBooks = () => async (dispatch) => {
   allBooks.forEach((book) => {
     const id = book[0];
     const { title } = book[1][0];
-    fetchedBooks.push({ id, title });
+    const { category } = book[1][0];
+    fetchedBooks.push({ id, title, category });
   });
 
   dispatch({ type: GET_BOOKS, fetchedBooks });
