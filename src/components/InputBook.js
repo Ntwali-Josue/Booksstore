@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Select from 'react-select';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
@@ -18,7 +17,7 @@ const InputBook = () => {
   const [category, setCategory] = useState('Action');
 
   const handleTitleChange = (e) => setTitle(e.target.value);
-  const handleCategoryChange = (e) => setCategory(e);
+  const handleCategoryChange = (e) => setCategory(e.target.value);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -47,7 +46,7 @@ const InputBook = () => {
           onChange={handleTitleChange}
           name="title"
         />
-        <Select
+        <select
           className="select"
           value={category}
           onChange={handleCategoryChange}
@@ -56,7 +55,7 @@ const InputBook = () => {
           {categories.map((categ) => (
             <option key={uuidv4()} value={categ}>{categ}</option>
           ))}
-        </Select>
+        </select>
         <input type="submit" value="ADD BOOK" className="add-book" />
       </div>
     </form>

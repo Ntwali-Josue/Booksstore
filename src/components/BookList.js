@@ -12,7 +12,7 @@ const BookLists = () => {
 
   const books = useSelector((state) => state.booksReducer);
   books.forEach((book) => {
-    console.log(book.title);
+    console.log(book.id);
   });
 
   const mapBooks = books.map((book) => (

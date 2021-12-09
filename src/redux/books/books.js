@@ -20,7 +20,6 @@ export const getBooks = () => async (dispatch) => {
     const { category } = value[0];
     fetchedBooks.push({ id, title, category });
   });
-  console.log(fetchedBooks);
 
   dispatch({ type: GET_BOOKS, fetchedBooks });
 };
