@@ -1,20 +1,56 @@
+import axios from 'axios';
+
+const GET_BOOKS = 'bookStore/books/GET_BOOKS';
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
+const fetchApi = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/GFFEgsISOe46DTFg0eTa/books/';
 
 const initialsState = [];
 
-export const addBook = (payload) => ({
-  type: ADD_BOOK,
-  payload,
-});
+export const getBooks = () => async (dispatch) => {
+  const result = await axios.get(fetchApi);
+  const books = result.data;
 
-export const removeBook = (payload) => ({
-  type: REMOVE_BOOK,
-  payload,
-});
+  const allBooks = Object.entries(books);
+  const fetchedBooks = [];
+  allBooks.forEach(([key, value]) => {
+    const id = key;
+    const { title } = value;
+    fetchedBooks.push({ id, title });
+  });
+  dispatch({ type: ADD_BOOK, fetchedBooks });
+};
+
+export const addBook = (book) => async (dispatch) => {
+  const result = await axios.post(fetchApi, {
+    item_id: book.id,
+    title: book.title,
+    category: book.category,
+  });
+  const addedBook = result.data;
+  if (addedBook === 'Created') {
+    dispatch({
+      type: ADD_BOOK,
+      book,
+    });
+  }
+};
+
+export const removeBook = (bookId) => async (dispatch) => {
+  const result = await axios.delete(`${fetchApi}/${bookId}`);
+  const removedBook = result.data;
+  if (removedBook === 'Deleted') {
+    dispatch({
+      type: REMOVE_BOOK,
+      bookId,
+    });
+  }
+};
 
 const reducer = (state = initialsState, action) => {
   switch (action.type) {
+    case GET_BOOKS:
+      return [...action.fetchedBooks];
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
