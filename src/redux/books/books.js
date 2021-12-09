@@ -10,15 +10,17 @@ const initialsState = [];
 export const getBooks = () => async (dispatch) => {
   const result = await axios.get(fetchApi);
   const books = result.data;
+  // console.log(books);
 
   const allBooks = Object.entries(books);
   const fetchedBooks = [];
-  allBooks.forEach((book) => {
-    const id = book[0];
-    const { title } = book[1][0];
-    const { category } = book[1][0];
+  allBooks.forEach(([key, value]) => {
+    const id = key;
+    const { title } = value[0];
+    const { category } = value[0];
     fetchedBooks.push({ id, title, category });
   });
+  console.log(fetchedBooks);
 
   dispatch({ type: GET_BOOKS, fetchedBooks });
 };
