@@ -35,7 +35,7 @@ const InputBook = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1 style={{ color: '#5c5c5c', padding: '0 50px' }}>Add a new Book</h1>
+      <h3 className="form-title">Add a new Book</h3>
       <div className="form-group">
         <input
           type="text"
@@ -47,7 +47,7 @@ const InputBook = () => {
           name="title"
         />
         <select
-          className="select"
+          className="select form-control"
           value={category}
           onChange={handleCategoryChange}
           name="category"
