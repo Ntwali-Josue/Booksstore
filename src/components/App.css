@@ -76,6 +76,7 @@
 .chapter-section {
   border-left: 1px solid #dfdfdf;
   padding-left: 50px;
+  padding-top: 20px;
 }
 
 .current-chapter {
@@ -142,6 +143,10 @@ form {
   cursor: pointer;
 }
 
+.add-book:hover {
+  background-color: #27a2ff;
+}
+
 .book-btn {
   margin: 20px 0;
   background-color: #fff;
@@ -149,6 +154,10 @@ form {
   border: none;
   border-left: solid 1px #e8e8e8;
   cursor: pointer;
+}
+
+.book-btn:hover {
+  text-decoration: underline;
 }
 
 .comments {
