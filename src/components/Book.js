@@ -1,18 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Card, Button } from 'react-bootstrap';
 import RemoveBook from './RemoveBook';
 
 const Book = ({ id, title, category }) => (
-  <div>
+  <>
     <div className="book-card ">
-      <h2>{title}</h2>
-      <span>{category}</span>
-      <h3>By Josh</h3>
-      <button type="button" className="book-btn comments">Comments</button>
-      <RemoveBook id={id} />
-      <button type="button" className="book-btn">Edit</button>
+      <Card>
+        <Card.Body>
+          <Card.Subtitle>{title}</Card.Subtitle>
+          <Card.Title>{category}</Card.Title>
+          <Card.Text>By Josh</Card.Text>
+          <button type="button" className="book-btn comments">Comments</button>
+          <RemoveBook id={id} />
+          <button type="button" className="book-btn">Edit</button>
+        </Card.Body>
+      </Card>
     </div>
-  </div>
+  </>
 );
 
 Book.propTypes = {
