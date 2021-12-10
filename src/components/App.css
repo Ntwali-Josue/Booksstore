@@ -4,14 +4,19 @@
 }
 
 .nav {
-  display: flex;
-  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 20% 68% 12%;
+  padding-left: 100px;
   background-color: #fff;
 }
 
 .nav h1 {
   color: #0290ff;
   font-family: sans-serif;
+}
+
+.links {
+  display: flex;
 }
 
 .nav-links {
@@ -25,6 +30,18 @@
 .nav-links:hover {
   color: #000;
   text-decoration: underline;
+}
+
+.profile {
+  width: 20px;
+  margin-top: 20px;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #bdbdbd;
 }
 
 .card-style {
@@ -80,13 +97,14 @@
 }
 
 .current-chapter {
-  color: #6e6e6e;
+  color: #888;
   font-size: 15px;
 }
 
 .chapter {
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 16px;
+  color: #555;
+  font-weight: 300;
   padding-bottom: 20px;
 }
 
