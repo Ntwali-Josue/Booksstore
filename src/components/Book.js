@@ -3,10 +3,18 @@ import PropTypes from 'prop-types';
 import { Card, Button } from 'react-bootstrap';
 import RemoveBook from './RemoveBook';
 
+const cardStyle = {
+  display: 'flex',
+  flexDirection: 'row',
+  marginBottom: '15px',
+  alignItems: 'center',
+  padding: '10px 20px',
+};
+
 const Book = ({ id, title, category }) => (
   <>
     <div className="book-card ">
-      <Card>
+      <Card style={cardStyle}>
         <Card.Body>
           <Card.Subtitle>{title}</Card.Subtitle>
           <Card.Title>{category}</Card.Title>
