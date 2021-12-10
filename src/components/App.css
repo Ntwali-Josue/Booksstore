@@ -98,19 +98,38 @@
   margin-top: 10px;
 }
 
+hr {
+  color: #8f8f8f;
+  width: 85%;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+}
+
+.form-title {
+  color: #a5a5a5;
+  font-family: sans-serif;
+  margin: 0 60px;
+}
+
 .form-group {
   display: flex;
   justify-content: space-around;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .form-control {
-  width: 25%;
+  width: 35%;
   border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .select {
   width: 20%;
+  font-family: sans-serif;
 }
 
 .add-book {
