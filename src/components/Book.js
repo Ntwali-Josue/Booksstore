@@ -17,10 +17,13 @@ const Book = ({ id, title, category }) => (
         <RemoveBook id={id} />
         <button type="button" className="book-btn">Edit</button>
       </div>
-      <div>
-        {/* <Card.Img variant="top" src="https://i.stack.imgur.com/7wcxc.png" className="image" /> */}
-        <Card.Title>24%</Card.Title>
-        <Card.Text>Completed</Card.Text>
+      <div className="progress-section">
+        <img alt="progress" variant="top" src="https://i.stack.imgur.com/7wcxc.png" className="image" />
+        <div>
+          <span className="percentage">24%</span>
+          <br />
+          <span className="completed">Completed</span>
+        </div>
       </div>
       <div>
         <Card.Subtitle className="mb-2 text-muted">Current chapter</Card.Subtitle>
