@@ -8,7 +8,9 @@ const Book = ({ id, title, category }) => (
       <h2>{title}</h2>
       <span>{category}</span>
       <h3>By Josh</h3>
+      <button type="button" className="book-btn comments">Comments</button>
       <RemoveBook id={id} />
+      <button type="button" className="book-btn">Edit</button>
     </div>
   </div>
 );
