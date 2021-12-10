@@ -25,11 +25,11 @@ const Book = ({ id, title, category }) => (
         </div>
       </div>
       <div className="chapter-section">
-        <span className="current-chapter">Current chapter</span>
+        <span className="current-chapter">CURRENT CHAPTER</span>
         <br />
         <span className="chapter">Chapter 17</span>
         <br />
-        <button type="button" className="update-progress">Update progress</button>
+        <button type="button" className="update-progress">UPDATE PROGRESS</button>
       </div>
     </div>
   </>
