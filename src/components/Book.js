@@ -28,8 +28,14 @@ const Book = ({ id, title, category }) => (
           <Card.Title>24%</Card.Title>
           <Card.Text>Completed</Card.Text>
         </Card.Body>
+        <Card.Body>
+          <Card.Subtitle className="mb-2 text-muted">Current chapter</Card.Subtitle>
+          <Card.Title>Chapter 17</Card.Title>
+          <Button variant="primary">Update progress</Button>
+        </Card.Body>
       </Card>
     </div>
+  </>
 );
 
 Book.propTypes = {
