@@ -23,9 +23,13 @@ const Book = ({ id, title, category }) => (
           <RemoveBook id={id} />
           <button type="button" className="book-btn">Edit</button>
         </Card.Body>
+        <Card.Body>
+          <Card.Img variant="top" src="https://i.stack.imgur.com/7wcxc.png" className="image" />
+          <Card.Title>24%</Card.Title>
+          <Card.Text>Completed</Card.Text>
+        </Card.Body>
       </Card>
     </div>
-  </>
 );
 
 Book.propTypes = {
