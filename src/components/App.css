@@ -22,6 +22,28 @@
   color: #6e6e6e;
 }
 
+.nav-links:hover {
+  color: #000;
+}
+
+.card-style {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 15px auto;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.title {
+  font-family: sans-serif;
+  color: #8f8f8f;
+  font-size: 14px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
 .form-group {
   display: flex;
   justify-content: space-around;
@@ -45,16 +67,8 @@
   cursor: pointer;
 }
 
-.book-card {
-  background-color: #fff;
-  width: 80%;
-  margin: auto;
-  padding: 0 20px;
-}
-
 .book-btn {
   margin: 5px 0;
-  padding: 0 15px;
   background-color: white;
   color: #4386bf;
   border: none;
