@@ -10,13 +10,15 @@ const Book = ({ id, title, category }) => (
         <span className="title">{title}</span>
         <br />
         <span className="category">{category}</span>
-        <p>By Josh</p>
+        <br />
+        <span className="author">By Josh</span>
+        <br />
         <button type="button" className="book-btn comments">Comments</button>
         <RemoveBook id={id} />
         <button type="button" className="book-btn">Edit</button>
       </div>
       <div>
-        <Card.Img variant="top" src="https://i.stack.imgur.com/7wcxc.png" className="image" />
+        {/* <Card.Img variant="top" src="https://i.stack.imgur.com/7wcxc.png" className="image" /> */}
         <Card.Title>24%</Card.Title>
         <Card.Text>Completed</Card.Text>
       </div>
