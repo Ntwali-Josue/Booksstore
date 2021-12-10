@@ -24,6 +24,7 @@
 
 .nav-links:hover {
   color: #000;
+  text-decoration: underline;
 }
 
 .card-style {
