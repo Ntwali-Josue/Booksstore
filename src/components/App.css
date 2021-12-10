@@ -40,8 +40,18 @@
   font-family: sans-serif;
   color: #8f8f8f;
   font-size: 14px;
-  padding-bottom: 10px;
   font-weight: bold;
+}
+
+.category {
+  font-family: serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.author {
+  font-size: 14px;
+  color: #4386bf;
 }
 
 .form-group {
@@ -68,11 +78,12 @@
 }
 
 .book-btn {
-  margin: 5px 0;
-  background-color: white;
+  margin: 20px 0;
+  background-color: #fff;
   color: #4386bf;
   border: none;
   border-left: solid 1px #e8e8e8;
+  cursor: pointer;
 }
 
 .comments {
