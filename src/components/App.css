@@ -27,11 +27,10 @@
 }
 
 .card-style {
-  display: flex;
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
   width: 80%;
-  justify-content: space-between;
   margin: 15px auto;
-  align-items: center;
   padding: 10px 20px;
   background-color: #fff;
 }
@@ -71,6 +70,32 @@
 .completed {
   color: #6e6e6e;
   font-size: 12px;
+}
+
+.chapter-section {
+  border-left: 1px solid #dfdfdf;
+  padding-left: 50px;
+}
+
+.current-chapter {
+  color: #6e6e6e;
+  font-size: 15px;
+}
+
+.chapter {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.update-progress {
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .form-group {

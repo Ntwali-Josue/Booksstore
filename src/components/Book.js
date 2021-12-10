@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, Button } from 'react-bootstrap';
 import RemoveBook from './RemoveBook';
 
 const Book = ({ id, title, category }) => (
@@ -25,10 +24,12 @@ const Book = ({ id, title, category }) => (
           <span className="completed">Completed</span>
         </div>
       </div>
-      <div>
-        <Card.Subtitle className="mb-2 text-muted">Current chapter</Card.Subtitle>
-        <Card.Title>Chapter 17</Card.Title>
-        <Button variant="primary">Update progress</Button>
+      <div className="chapter-section">
+        <span className="current-chapter">Current chapter</span>
+        <br />
+        <span className="chapter">Chapter 17</span>
+        <br />
+        <button type="button" className="update-progress">Update progress</button>
       </div>
     </div>
   </>
