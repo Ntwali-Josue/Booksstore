@@ -3,14 +3,36 @@ import PropTypes from 'prop-types';
 import RemoveBook from './RemoveBook';
 
 const Book = ({ id, title, category }) => (
-  <div>
-    <div className="book-card ">
-      <h2>{title}</h2>
-      <span>{category}</span>
-      <h3>By Josh</h3>
-      <RemoveBook id={id} />
+  <>
+    <div className="card-style">
+      <div>
+        <span className="title">{title}</span>
+        <br />
+        <span className="category">{category}</span>
+        <br />
+        <span className="author">By Josh</span>
+        <br />
+        <button type="button" className="book-btn comments">Comments</button>
+        <RemoveBook id={id} />
+        <button type="button" className="book-btn">Edit</button>
+      </div>
+      <div className="progress-section">
+        <img alt="progress" variant="top" src="https://i.stack.imgur.com/7wcxc.png" className="image" />
+        <div>
+          <span className="percentage">24%</span>
+          <br />
+          <span className="completed">Completed</span>
+        </div>
+      </div>
+      <div className="chapter-section">
+        <span className="current-chapter">CURRENT CHAPTER</span>
+        <br />
+        <span className="chapter">Chapter 17</span>
+        <br />
+        <button type="button" className="update-progress">UPDATE PROGRESS</button>
+      </div>
     </div>
-  </div>
+  </>
 );
 
 Book.propTypes = {

@@ -4,7 +4,7 @@
 
 > This project is a webapp which helps the user to view lists of books and add them. It also allows the user to search for books by categories.
 
-![screenshot](https://user-images.githubusercontent.com/58233753/145073843-8d35703c-1cd4-41f9-a022-63e0c883c869.png)
+![screenshot](https://user-images.githubusercontent.com/58233753/145626122-a98ab069-ab64-4522-853f-f3a11617f559.png)
 
 
 ## Built With 
@@ -29,8 +29,39 @@ To get a local copy up and running follow these simple example steps.
 ### Setup 🔂 
 - Clone this repository by running `git clone https://github.com/Ntwali-Josue/Booksstore.git` in your terminal.
 
-### Install ⚙️
-- Run `npm install` in your terminal to install the dependencies.
+### Install
+- Run `npm install` to install required dependecies for running the project
+### Usage
+- Run `npm start` to run and use the project
+### Run tests
+- `Coming soon...`
+### Deployment
+- Run `npm run deploy`
 
-### Usage 💻
-- Run `npm start` for webpack to run and open your application in the browser.
+## Author
+
+👤 **KARANGWA NTWALI JOSUE**
+
+- GitHub: [@Ntwali-Josue](https://github.com/Ntwali-Josue)
+- Twitter: [@JosueNtwali](https://twitter.com/JosueNtwali)
+- LinkedIn: [karangwa](https://linkedin.com/in/karangwa)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
