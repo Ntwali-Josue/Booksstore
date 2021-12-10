@@ -54,6 +54,25 @@
   color: #4386bf;
 }
 
+.progress-section {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 70px;
+  margin: 0 10px;
+}
+
+.percentage {
+  font-size: 24px;
+}
+
+.completed {
+  color: #6e6e6e;
+  font-size: 12px;
+}
+
 .form-group {
   display: flex;
   justify-content: space-around;
