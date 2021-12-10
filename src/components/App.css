@@ -9,9 +9,15 @@
   background-color: #fff;
 }
 
+.nav h1 {
+  color: #0290ff;
+  font-family: sans-serif;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
+  text-decoration: none;
   padding: 25px;
   color: #6e6e6e;
 }
@@ -33,8 +39,15 @@
 
 .add-book {
   color: #fff;
-  background-color: #2366f5;
+  background-color: #0290ff;
   padding: 10px;
   border: none;
   cursor: pointer;
+}
+
+.book-card {
+  background-color: #fff;
+  width: 80%;
+  margin: auto;
+  padding: 0 20px;
 }
